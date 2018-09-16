@@ -1,0 +1,1016 @@
+{
+    "mappings": [
+        {
+            "name": "pressure_to_pitch",
+            "ranges": [
+                {
+                    "dst": -8192,
+                    "src": 0
+                },
+                {
+                    "dst": -291,
+                    "src": 391
+                },
+                {
+                    "dst": 360,
+                    "src": 2400
+                },
+                {
+                    "dst": 8192,
+                    "src": 3000
+                }
+            ]
+        },
+        {
+            "name": "speed_to_melody_volume",
+            "ranges": [
+                {
+                    "dst": 0,
+                    "src": 0
+                },
+                {
+                    "dst": 35,
+                    "src": 430
+                },
+                {
+                    "dst": 60,
+                    "src": 900
+                },
+                {
+                    "dst": 75,
+                    "src": 1400
+                },
+                {
+                    "dst": 87,
+                    "src": 2000
+                },
+                {
+                    "dst": 104,
+                    "src": 5000
+                }
+            ]
+        },
+        {
+            "name": "speed_to_drone_volume",
+            "ranges": [
+                {
+                    "dst": 0,
+                    "src": 0
+                },
+                {
+                    "dst": 35,
+                    "src": 430
+                },
+                {
+                    "dst": 60,
+                    "src": 900
+                },
+                {
+                    "dst": 75,
+                    "src": 1400
+                },
+                {
+                    "dst": 87,
+                    "src": 2000
+                },
+                {
+                    "dst": 99,
+                    "src": 5000
+                }
+            ]
+        },
+        {
+            "name": "keyvel_to_notevel",
+            "ranges": [
+                {
+                    "dst": 4,
+                    "src": 0
+                },
+                {
+                    "dst": 54,
+                    "src": 518
+                },
+                {
+                    "dst": 92,
+                    "src": 1266
+                },
+                {
+                    "dst": 116,
+                    "src": 2168
+                },
+                {
+                    "dst": 127,
+                    "src": 3000
+                }
+            ]
+        },
+        {
+            "name": "keyvel_to_tangent",
+            "ranges": [
+                {
+                    "dst": 0,
+                    "src": 0
+                },
+                {
+                    "dst": 7,
+                    "src": 858
+                },
+                {
+                    "dst": 40,
+                    "src": 1692
+                },
+                {
+                    "dst": 63,
+                    "src": 2866
+                }
+            ]
+        },
+        {
+            "name": "keyvel_to_keynoise",
+            "ranges": [
+                {
+                    "dst": 0,
+                    "src": 0
+                },
+                {
+                    "dst": 35,
+                    "src": 333
+                },
+                {
+                    "dst": 66,
+                    "src": 998
+                },
+                {
+                    "dst": 127,
+                    "src": 3000
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "chien": {
+                "threshold": 44
+            },
+            "keynoise": {
+                "bank": 3,
+                "finetune": 0,
+                "muted": true,
+                "note": 60,
+                "panning": 64,
+                "program": 2,
+                "soundfont": "keynoises.sf2",
+                "volume": 14
+            },
+            "main": {
+                "gain": 61,
+                "pitchbend_range": 35,
+                "volume": 115
+            },
+            "name": "French D/D",
+            "reverb": {
+                "bank": 0,
+                "finetune": 0,
+                "muted": true,
+                "note": 60,
+                "panning": 64,
+                "program": 0,
+                "soundfont": null,
+                "volume": 17
+            },
+            "tuning": {
+                "coarse": 0,
+                "fine": 0
+            },
+            "voices": {
+                "drone": [
+                    {
+                        "bank": 1,
+                        "finetune": 0,
+                        "muted": false,
+                        "note": 38,
+                        "panning": 64,
+                        "program": 2,
+                        "soundfont": "french.sf2",
+                        "volume": 82
+                    },
+                    {
+                        "bank": 0,
+                        "finetune": 0,
+                        "muted": true,
+                        "note": 38,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 64
+                    },
+                    {
+                        "bank": 0,
+                        "finetune": 0,
+                        "muted": true,
+                        "note": 60,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    }
+                ],
+                "melody": [
+                    {
+                        "bank": 0,
+                        "capo": 0,
+                        "finetune": 0,
+                        "mode": "midigurdy",
+                        "muted": false,
+                        "note": 62,
+                        "panning": 64,
+                        "polyphonic": false,
+                        "program": 0,
+                        "soundfont": "french.sf2",
+                        "volume": 127
+                    },
+                    {
+                        "bank": 0,
+                        "capo": 0,
+                        "finetune": 0,
+                        "mode": "midigurdy",
+                        "muted": true,
+                        "note": -1,
+                        "panning": 64,
+                        "polyphonic": false,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    },
+                    {
+                        "bank": 0,
+                        "capo": 0,
+                        "finetune": 0,
+                        "mode": "midigurdy",
+                        "muted": true,
+                        "note": 60,
+                        "panning": 64,
+                        "polyphonic": false,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    }
+                ],
+                "trompette": [
+                    {
+                        "bank": 2,
+                        "finetune": 0,
+                        "muted": false,
+                        "note": 62,
+                        "panning": 75,
+                        "program": 0,
+                        "soundfont": "french.sf2",
+                        "volume": 80
+                    },
+                    {
+                        "bank": 0,
+                        "finetune": 0,
+                        "muted": true,
+                        "note": 60,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    },
+                    {
+                        "bank": 0,
+                        "finetune": 0,
+                        "muted": true,
+                        "note": 60,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    }
+                ]
+            }
+        },
+        {
+            "chien": {
+                "threshold": 44
+            },
+            "keynoise": {
+                "bank": 3,
+                "finetune": 0,
+                "muted": true,
+                "note": 60,
+                "panning": 64,
+                "program": 2,
+                "soundfont": "keynoises.sf2",
+                "volume": 14
+            },
+            "main": {
+                "gain": 61,
+                "pitchbend_range": 35,
+                "volume": 115
+            },
+            "name": "French D/G",
+            "reverb": {
+                "bank": 0,
+                "finetune": 0,
+                "muted": true,
+                "note": 60,
+                "panning": 64,
+                "program": 0,
+                "soundfont": null,
+                "volume": 17
+            },
+            "tuning": {
+                "coarse": 0,
+                "fine": 0
+            },
+            "voices": {
+                "drone": [
+                    {
+                        "bank": 1,
+                        "finetune": 0,
+                        "muted": false,
+                        "note": 43,
+                        "panning": 64,
+                        "program": 2,
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 82
+                    },
+                    {
+                        "bank": 1,
+                        "finetune": 0,
+                        "muted": false,
+                        "note": 50,
+                        "panning": 64,
+                        "program": 4,
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 57
+                    },
+                    {
+                        "bank": 0,
+                        "finetune": 0,
+                        "muted": true,
+                        "note": 60,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    }
+                ],
+                "melody": [
+                    {
+                        "bank": 0,
+                        "capo": 0,
+                        "finetune": 0,
+                        "mode": "midigurdy",
+                        "muted": false,
+                        "note": 62,
+                        "panning": 64,
+                        "polyphonic": false,
+                        "program": 0,
+                        "soundfont": "french.sf2",
+                        "volume": 127
+                    },
+                    {
+                        "bank": 0,
+                        "capo": 0,
+                        "finetune": 0,
+                        "mode": "midigurdy",
+                        "muted": true,
+                        "note": -1,
+                        "panning": 64,
+                        "polyphonic": false,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    },
+                    {
+                        "bank": 0,
+                        "capo": 0,
+                        "finetune": 0,
+                        "mode": "midigurdy",
+                        "muted": true,
+                        "note": 60,
+                        "panning": 64,
+                        "polyphonic": false,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    }
+                ],
+                "trompette": [
+                    {
+                        "bank": 2,
+                        "finetune": 0,
+                        "muted": false,
+                        "note": 55,
+                        "panning": 75,
+                        "program": 0,
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 120
+                    },
+                    {
+                        "bank": 2,
+                        "finetune": 0,
+                        "muted": true,
+                        "note": 62,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": "french.sf2",
+                        "volume": 85
+                    },
+                    {
+                        "bank": 0,
+                        "finetune": 0,
+                        "muted": true,
+                        "note": 60,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    }
+                ]
+            }
+        },
+        {
+            "chien": {
+                "threshold": 44
+            },
+            "keynoise": {
+                "bank": 3,
+                "finetune": 0,
+                "muted": true,
+                "note": 60,
+                "panning": 64,
+                "program": 2,
+                "soundfont": "keynoises.sf2",
+                "volume": 14
+            },
+            "main": {
+                "gain": 61,
+                "pitchbend_range": 35,
+                "volume": 115
+            },
+            "name": "Alto C/C",
+            "reverb": {
+                "bank": 0,
+                "finetune": 0,
+                "muted": true,
+                "note": 60,
+                "panning": 64,
+                "program": 0,
+                "soundfont": null,
+                "volume": 17
+            },
+            "tuning": {
+                "coarse": 0,
+                "fine": 0
+            },
+            "voices": {
+                "drone": [
+                    {
+                        "bank": 1,
+                        "finetune": 0,
+                        "muted": false,
+                        "note": 36,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 82
+                    },
+                    {
+                        "bank": 1,
+                        "finetune": 0,
+                        "muted": false,
+                        "note": 48,
+                        "panning": 64,
+                        "program": 3,
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 82
+                    },
+                    {
+                        "bank": 0,
+                        "finetune": 0,
+                        "muted": true,
+                        "note": 60,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    }
+                ],
+                "melody": [
+                    {
+                        "bank": 0,
+                        "capo": 0,
+                        "finetune": 0,
+                        "mode": "midigurdy",
+                        "muted": false,
+                        "note": 48,
+                        "panning": 64,
+                        "polyphonic": false,
+                        "program": 0,
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 127
+                    },
+                    {
+                        "bank": 0,
+                        "capo": 0,
+                        "finetune": 0,
+                        "mode": "midigurdy",
+                        "muted": false,
+                        "note": 60,
+                        "panning": 64,
+                        "polyphonic": false,
+                        "program": 3,
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 125
+                    },
+                    {
+                        "bank": 0,
+                        "capo": 0,
+                        "finetune": 0,
+                        "mode": "midigurdy",
+                        "muted": false,
+                        "note": 60,
+                        "panning": 64,
+                        "polyphonic": false,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    }
+                ],
+                "trompette": [
+                    {
+                        "bank": 2,
+                        "finetune": 0,
+                        "muted": false,
+                        "note": 60,
+                        "panning": 75,
+                        "program": 2,
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 120
+                    },
+                    {
+                        "bank": 0,
+                        "finetune": 0,
+                        "muted": true,
+                        "note": -1,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 85
+                    },
+                    {
+                        "bank": 0,
+                        "finetune": 0,
+                        "muted": true,
+                        "note": 60,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    }
+                ]
+            }
+        },
+        {
+            "chien": {
+                "threshold": 44
+            },
+            "keynoise": {
+                "bank": 3,
+                "finetune": 0,
+                "muted": true,
+                "note": 60,
+                "panning": 64,
+                "program": 2,
+                "soundfont": "keynoises.sf2",
+                "volume": 14
+            },
+            "main": {
+                "gain": 61,
+                "pitchbend_range": 35,
+                "volume": 115
+            },
+            "name": "Alto D/D",
+            "reverb": {
+                "bank": 0,
+                "finetune": 0,
+                "muted": true,
+                "note": 60,
+                "panning": 64,
+                "program": 0,
+                "soundfont": null,
+                "volume": 17
+            },
+            "tuning": {
+                "coarse": 0,
+                "fine": 0
+            },
+            "voices": {
+                "drone": [
+                    {
+                        "bank": 1,
+                        "finetune": 0,
+                        "muted": false,
+                        "note": 38,
+                        "panning": 64,
+                        "program": 1,
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 82
+                    },
+                    {
+                        "bank": 1,
+                        "finetune": 0,
+                        "muted": false,
+                        "note": 50,
+                        "panning": 64,
+                        "program": 4,
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 82
+                    },
+                    {
+                        "bank": 0,
+                        "finetune": 0,
+                        "muted": true,
+                        "note": 60,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    }
+                ],
+                "melody": [
+                    {
+                        "bank": 0,
+                        "capo": 0,
+                        "finetune": 0,
+                        "mode": "midigurdy",
+                        "muted": false,
+                        "note": 50,
+                        "panning": 64,
+                        "polyphonic": false,
+                        "program": 1,
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 127
+                    },
+                    {
+                        "bank": 0,
+                        "capo": 0,
+                        "finetune": 0,
+                        "mode": "midigurdy",
+                        "muted": false,
+                        "note": 62,
+                        "panning": 64,
+                        "polyphonic": false,
+                        "program": 4,
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 125
+                    },
+                    {
+                        "bank": 0,
+                        "capo": 0,
+                        "finetune": 0,
+                        "mode": "midigurdy",
+                        "muted": false,
+                        "note": 60,
+                        "panning": 64,
+                        "polyphonic": false,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    }
+                ],
+                "trompette": [
+                    {
+                        "bank": 2,
+                        "finetune": 0,
+                        "muted": false,
+                        "note": 62,
+                        "panning": 75,
+                        "program": 3,
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 120
+                    },
+                    {
+                        "bank": 0,
+                        "finetune": 0,
+                        "muted": true,
+                        "note": -1,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 85
+                    },
+                    {
+                        "bank": 0,
+                        "finetune": 0,
+                        "muted": true,
+                        "note": 60,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    }
+                ]
+            }
+        },
+        {
+            "chien": {
+                "threshold": 44
+            },
+            "keynoise": {
+                "bank": 3,
+                "finetune": 0,
+                "muted": true,
+                "note": 60,
+                "panning": 64,
+                "program": 2,
+                "soundfont": "keynoises.sf2",
+                "volume": 14
+            },
+            "main": {
+                "gain": 61,
+                "pitchbend_range": 35,
+                "volume": 115
+            },
+            "name": "Alto G/C",
+            "reverb": {
+                "bank": 0,
+                "finetune": 0,
+                "muted": true,
+                "note": 60,
+                "panning": 64,
+                "program": 0,
+                "soundfont": null,
+                "volume": 17
+            },
+            "tuning": {
+                "coarse": 0,
+                "fine": 0
+            },
+            "voices": {
+                "drone": [
+                    {
+                        "bank": 1,
+                        "finetune": 0,
+                        "muted": false,
+                        "note": 36,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 82
+                    },
+                    {
+                        "bank": 1,
+                        "finetune": 0,
+                        "muted": false,
+                        "note": 48,
+                        "panning": 64,
+                        "program": 3,
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 82
+                    },
+                    {
+                        "bank": 0,
+                        "finetune": 0,
+                        "muted": true,
+                        "note": 60,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    }
+                ],
+                "melody": [
+                    {
+                        "bank": 0,
+                        "capo": 0,
+                        "finetune": 0,
+                        "mode": "midigurdy",
+                        "muted": false,
+                        "note": 55,
+                        "panning": 64,
+                        "polyphonic": false,
+                        "program": 2,
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 127
+                    },
+                    {
+                        "bank": 0,
+                        "capo": 0,
+                        "finetune": 0,
+                        "mode": "midigurdy",
+                        "muted": false,
+                        "note": 67,
+                        "panning": 64,
+                        "polyphonic": false,
+                        "program": 5,
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 125
+                    },
+                    {
+                        "bank": 0,
+                        "capo": 0,
+                        "finetune": 0,
+                        "mode": "midigurdy",
+                        "muted": false,
+                        "note": 60,
+                        "panning": 64,
+                        "polyphonic": false,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    }
+                ],
+                "trompette": [
+                    {
+                        "bank": 2,
+                        "finetune": 0,
+                        "muted": false,
+                        "note": 60,
+                        "panning": 75,
+                        "program": 2,
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 120
+                    },
+                    {
+                        "bank": 0,
+                        "finetune": 0,
+                        "muted": true,
+                        "note": -1,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 85
+                    },
+                    {
+                        "bank": 0,
+                        "finetune": 0,
+                        "muted": true,
+                        "note": 60,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    }
+                ]
+            }
+        },
+        {
+            "chien": {
+                "threshold": 44
+            },
+            "keynoise": {
+                "bank": 3,
+                "finetune": 0,
+                "muted": true,
+                "note": 60,
+                "panning": 64,
+                "program": 2,
+                "soundfont": "keynoises.sf2",
+                "volume": 14
+            },
+            "main": {
+                "gain": 61,
+                "pitchbend_range": 35,
+                "volume": 115
+            },
+            "name": "Soprano G/C",
+            "reverb": {
+                "bank": 0,
+                "finetune": 0,
+                "muted": true,
+                "note": 60,
+                "panning": 64,
+                "program": 0,
+                "soundfont": null,
+                "volume": 17
+            },
+            "tuning": {
+                "coarse": 0,
+                "fine": 0
+            },
+            "voices": {
+                "drone": [
+                    {
+                        "bank": 1,
+                        "finetune": 0,
+                        "muted": false,
+                        "note": 48,
+                        "panning": 64,
+                        "program": 3,
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 100
+                    },
+                    {
+                        "bank": 0,
+                        "finetune": 0,
+                        "muted": true,
+                        "note": -1,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 82
+                    },
+                    {
+                        "bank": 0,
+                        "finetune": 0,
+                        "muted": true,
+                        "note": 60,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    }
+                ],
+                "melody": [
+                    {
+                        "bank": 0,
+                        "capo": 0,
+                        "finetune": 0,
+                        "mode": "midigurdy",
+                        "muted": false,
+                        "note": 67,
+                        "panning": 64,
+                        "polyphonic": false,
+                        "program": 0,
+                        "soundfont": "vienna-soprano.sf2",
+                        "volume": 127
+                    },
+                    {
+                        "bank": 0,
+                        "capo": 0,
+                        "finetune": 0,
+                        "mode": "midigurdy",
+                        "muted": true,
+                        "note": -1,
+                        "panning": 64,
+                        "polyphonic": false,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 125
+                    },
+                    {
+                        "bank": 0,
+                        "capo": 0,
+                        "finetune": 0,
+                        "mode": "midigurdy",
+                        "muted": false,
+                        "note": 60,
+                        "panning": 64,
+                        "polyphonic": false,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    }
+                ],
+                "trompette": [
+                    {
+                        "bank": 2,
+                        "finetune": 0,
+                        "muted": false,
+                        "note": 60,
+                        "panning": 69,
+                        "program": 2,
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 120
+                    },
+                    {
+                        "bank": 0,
+                        "finetune": 0,
+                        "muted": true,
+                        "note": -1,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 85
+                    },
+                    {
+                        "bank": 0,
+                        "finetune": 0,
+                        "muted": true,
+                        "note": 60,
+                        "panning": 64,
+                        "program": 0,
+                        "soundfont": null,
+                        "volume": 100
+                    }
+                ]
+            }
+        }
+    ],
+    "settings": {
+        "keyboard": {
+            "base_note_delay": 12,
+            "key_off_debounce": 6,
+            "key_on_debounce": 3
+        },
+        "ui": {
+            "brightness": 50,
+            "chien_sens_reverse": false,
+            "timeout": 10
+        }
+    }
+}
