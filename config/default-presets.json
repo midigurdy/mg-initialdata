@@ -4,16 +4,20 @@
             "name": "pressure_to_pitch",
             "ranges": [
                 {
-                    "dst": -8192,
+                    "dst": -2949,
                     "src": 0
                 },
                 {
-                    "dst": -291,
-                    "src": 391
+                    "dst": -327,
+                    "src": 358
                 },
                 {
                     "dst": 360,
                     "src": 2400
+                },
+                {
+                    "dst": 3222,
+                    "src": 2779
                 },
                 {
                     "dst": 8192,
@@ -29,23 +33,23 @@
                     "src": 0
                 },
                 {
-                    "dst": 35,
-                    "src": 430
+                    "dst": 39,
+                    "src": 233
                 },
                 {
-                    "dst": 60,
-                    "src": 900
+                    "dst": 66,
+                    "src": 621
                 },
                 {
-                    "dst": 75,
-                    "src": 1400
+                    "dst": 88,
+                    "src": 1416
                 },
                 {
-                    "dst": 87,
-                    "src": 2000
+                    "dst": 110,
+                    "src": 2618
                 },
                 {
-                    "dst": 104,
+                    "dst": 127,
                     "src": 5000
                 }
             ]
@@ -74,8 +78,79 @@
                     "src": 2000
                 },
                 {
-                    "dst": 99,
+                    "dst": 109,
                     "src": 5000
+                }
+            ]
+        },
+        {
+            "name": "speed_to_trompette_volume",
+            "ranges": [
+                {
+                    "dst": 0,
+                    "src": 0
+                },
+                {
+                    "dst": 27,
+                    "src": 290
+                },
+                {
+                    "dst": 49,
+                    "src": 822
+                },
+                {
+                    "dst": 61,
+                    "src": 1404
+                },
+                {
+                    "dst": 73,
+                    "src": 2104
+                },
+                {
+                    "dst": 95,
+                    "src": 5000
+                }
+            ]
+        },
+        {
+            "name": "speed_to_chien",
+            "ranges": [
+                {
+                    "dst": 0,
+                    "src": 0
+                },
+                {
+                    "dst": 71,
+                    "src": 317
+                },
+                {
+                    "dst": 105,
+                    "src": 948
+                },
+                {
+                    "dst": 118,
+                    "src": 2129
+                },
+                {
+                    "dst": 127,
+                    "src": 4000
+                }
+            ]
+        },
+        {
+            "name": "chien_threshold_to_range",
+            "ranges": [
+                {
+                    "dst": 50,
+                    "src": 0
+                },
+                {
+                    "dst": 0,
+                    "src": 13
+                },
+                {
+                    "dst": 0,
+                    "src": 100
                 }
             ]
         },
@@ -116,8 +191,8 @@
                     "src": 858
                 },
                 {
-                    "dst": 40,
-                    "src": 1692
+                    "dst": 32,
+                    "src": 1882
                 },
                 {
                     "dst": 63,
@@ -149,27 +224,26 @@
     ],
     "presets": [
         {
-            "chien": {
-                "threshold": 44
-            },
             "keynoise": {
                 "bank": 3,
+                "chien_threshold": 50,
                 "finetune": 0,
                 "muted": true,
                 "note": 60,
                 "panning": 64,
                 "program": 2,
                 "soundfont": "keynoises.sf2",
-                "volume": 14
+                "volume": 31
             },
             "main": {
                 "gain": 61,
                 "pitchbend_range": 35,
-                "volume": 115
+                "volume": 108
             },
             "name": "French D/D",
             "reverb": {
                 "bank": 0,
+                "chien_threshold": 50,
                 "finetune": 0,
                 "muted": true,
                 "note": 60,
@@ -186,16 +260,18 @@
                 "drone": [
                     {
                         "bank": 1,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "muted": false,
                         "note": 38,
                         "panning": 64,
                         "program": 2,
                         "soundfont": "french.sf2",
-                        "volume": 82
+                        "volume": 113
                     },
                     {
                         "bank": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "muted": true,
                         "note": 38,
@@ -206,6 +282,7 @@
                     },
                     {
                         "bank": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "muted": true,
                         "note": 60,
@@ -219,6 +296,7 @@
                     {
                         "bank": 0,
                         "capo": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "mode": "midigurdy",
                         "muted": false,
@@ -232,6 +310,7 @@
                     {
                         "bank": 0,
                         "capo": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "mode": "midigurdy",
                         "muted": true,
@@ -245,6 +324,7 @@
                     {
                         "bank": 0,
                         "capo": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "mode": "midigurdy",
                         "muted": true,
@@ -259,17 +339,21 @@
                 "trompette": [
                     {
                         "bank": 2,
+                        "chien_threshold": 50,
                         "finetune": 0,
+                        "mode": "midigurdy",
                         "muted": false,
                         "note": 62,
-                        "panning": 75,
+                        "panning": 64,
                         "program": 0,
                         "soundfont": "french.sf2",
-                        "volume": 80
+                        "volume": 89
                     },
                     {
                         "bank": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
+                        "mode": "midigurdy",
                         "muted": true,
                         "note": 60,
                         "panning": 64,
@@ -279,7 +363,9 @@
                     },
                     {
                         "bank": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
+                        "mode": "midigurdy",
                         "muted": true,
                         "note": 60,
                         "panning": 64,
@@ -291,27 +377,26 @@
             }
         },
         {
-            "chien": {
-                "threshold": 44
-            },
             "keynoise": {
                 "bank": 3,
+                "chien_threshold": 50,
                 "finetune": 0,
                 "muted": true,
                 "note": 60,
                 "panning": 64,
                 "program": 2,
                 "soundfont": "keynoises.sf2",
-                "volume": 14
+                "volume": 25
             },
             "main": {
                 "gain": 61,
                 "pitchbend_range": 35,
-                "volume": 115
+                "volume": 108
             },
             "name": "French D/G",
             "reverb": {
                 "bank": 0,
+                "chien_threshold": 50,
                 "finetune": 0,
                 "muted": true,
                 "note": 60,
@@ -328,6 +413,7 @@
                 "drone": [
                     {
                         "bank": 1,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "muted": false,
                         "note": 43,
@@ -338,6 +424,7 @@
                     },
                     {
                         "bank": 1,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "muted": false,
                         "note": 50,
@@ -348,6 +435,7 @@
                     },
                     {
                         "bank": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "muted": true,
                         "note": 60,
@@ -361,6 +449,7 @@
                     {
                         "bank": 0,
                         "capo": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "mode": "midigurdy",
                         "muted": false,
@@ -374,6 +463,7 @@
                     {
                         "bank": 0,
                         "capo": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "mode": "midigurdy",
                         "muted": true,
@@ -387,6 +477,7 @@
                     {
                         "bank": 0,
                         "capo": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "mode": "midigurdy",
                         "muted": true,
@@ -401,17 +492,21 @@
                 "trompette": [
                     {
                         "bank": 2,
+                        "chien_threshold": 50,
                         "finetune": 0,
+                        "mode": "midigurdy",
                         "muted": false,
                         "note": 55,
-                        "panning": 75,
+                        "panning": 64,
                         "program": 0,
                         "soundfont": "vienna-alto.sf2",
-                        "volume": 120
+                        "volume": 108
                     },
                     {
                         "bank": 2,
+                        "chien_threshold": 50,
                         "finetune": 0,
+                        "mode": "midigurdy",
                         "muted": true,
                         "note": 62,
                         "panning": 64,
@@ -421,7 +516,9 @@
                     },
                     {
                         "bank": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
+                        "mode": "midigurdy",
                         "muted": true,
                         "note": 60,
                         "panning": 64,
@@ -433,27 +530,26 @@
             }
         },
         {
-            "chien": {
-                "threshold": 44
-            },
             "keynoise": {
                 "bank": 3,
+                "chien_threshold": 50,
                 "finetune": 0,
                 "muted": true,
                 "note": 60,
                 "panning": 64,
                 "program": 2,
                 "soundfont": "keynoises.sf2",
-                "volume": 14
+                "volume": 37
             },
             "main": {
                 "gain": 61,
                 "pitchbend_range": 35,
-                "volume": 115
+                "volume": 102
             },
             "name": "Alto C/C",
             "reverb": {
                 "bank": 0,
+                "chien_threshold": 50,
                 "finetune": 0,
                 "muted": true,
                 "note": 60,
@@ -470,6 +566,7 @@
                 "drone": [
                     {
                         "bank": 1,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "muted": false,
                         "note": 36,
@@ -480,8 +577,9 @@
                     },
                     {
                         "bank": 1,
+                        "chien_threshold": 50,
                         "finetune": 0,
-                        "muted": false,
+                        "muted": true,
                         "note": 48,
                         "panning": 64,
                         "program": 3,
@@ -490,6 +588,7 @@
                     },
                     {
                         "bank": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "muted": true,
                         "note": 60,
@@ -503,6 +602,7 @@
                     {
                         "bank": 0,
                         "capo": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "mode": "midigurdy",
                         "muted": false,
@@ -516,22 +616,24 @@
                     {
                         "bank": 0,
                         "capo": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "mode": "midigurdy",
-                        "muted": false,
+                        "muted": true,
                         "note": 60,
                         "panning": 64,
                         "polyphonic": false,
                         "program": 3,
                         "soundfont": "vienna-alto.sf2",
-                        "volume": 125
+                        "volume": 82
                     },
                     {
                         "bank": 0,
                         "capo": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "mode": "midigurdy",
-                        "muted": false,
+                        "muted": true,
                         "note": 60,
                         "panning": 64,
                         "polyphonic": false,
@@ -543,7 +645,9 @@
                 "trompette": [
                     {
                         "bank": 2,
+                        "chien_threshold": 50,
                         "finetune": 0,
+                        "mode": "midigurdy",
                         "muted": false,
                         "note": 60,
                         "panning": 75,
@@ -553,7 +657,9 @@
                     },
                     {
                         "bank": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
+                        "mode": "midigurdy",
                         "muted": true,
                         "note": -1,
                         "panning": 64,
@@ -563,7 +669,9 @@
                     },
                     {
                         "bank": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
+                        "mode": "midigurdy",
                         "muted": true,
                         "note": 60,
                         "panning": 64,
@@ -575,27 +683,26 @@
             }
         },
         {
-            "chien": {
-                "threshold": 44
-            },
             "keynoise": {
                 "bank": 3,
+                "chien_threshold": 50,
                 "finetune": 0,
                 "muted": true,
                 "note": 60,
                 "panning": 64,
                 "program": 2,
                 "soundfont": "keynoises.sf2",
-                "volume": 14
+                "volume": 34
             },
             "main": {
                 "gain": 61,
                 "pitchbend_range": 35,
-                "volume": 115
+                "volume": 102
             },
             "name": "Alto D/D",
             "reverb": {
                 "bank": 0,
+                "chien_threshold": 50,
                 "finetune": 0,
                 "muted": true,
                 "note": 60,
@@ -612,6 +719,7 @@
                 "drone": [
                     {
                         "bank": 1,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "muted": false,
                         "note": 38,
@@ -622,6 +730,7 @@
                     },
                     {
                         "bank": 1,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "muted": false,
                         "note": 50,
@@ -632,6 +741,7 @@
                     },
                     {
                         "bank": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "muted": true,
                         "note": 60,
@@ -645,6 +755,7 @@
                     {
                         "bank": 0,
                         "capo": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "mode": "midigurdy",
                         "muted": false,
@@ -658,6 +769,7 @@
                     {
                         "bank": 0,
                         "capo": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "mode": "midigurdy",
                         "muted": false,
@@ -671,9 +783,10 @@
                     {
                         "bank": 0,
                         "capo": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "mode": "midigurdy",
-                        "muted": false,
+                        "muted": true,
                         "note": 60,
                         "panning": 64,
                         "polyphonic": false,
@@ -685,7 +798,9 @@
                 "trompette": [
                     {
                         "bank": 2,
+                        "chien_threshold": 50,
                         "finetune": 0,
+                        "mode": "midigurdy",
                         "muted": false,
                         "note": 62,
                         "panning": 75,
@@ -695,7 +810,9 @@
                     },
                     {
                         "bank": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
+                        "mode": "midigurdy",
                         "muted": true,
                         "note": -1,
                         "panning": 64,
@@ -705,7 +822,9 @@
                     },
                     {
                         "bank": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
+                        "mode": "midigurdy",
                         "muted": true,
                         "note": 60,
                         "panning": 64,
@@ -717,27 +836,26 @@
             }
         },
         {
-            "chien": {
-                "threshold": 44
-            },
             "keynoise": {
                 "bank": 3,
+                "chien_threshold": 50,
                 "finetune": 0,
                 "muted": true,
                 "note": 60,
                 "panning": 64,
                 "program": 2,
                 "soundfont": "keynoises.sf2",
-                "volume": 14
+                "volume": 34
             },
             "main": {
                 "gain": 61,
                 "pitchbend_range": 35,
-                "volume": 115
+                "volume": 102
             },
             "name": "Alto G/C",
             "reverb": {
                 "bank": 0,
+                "chien_threshold": 50,
                 "finetune": 0,
                 "muted": true,
                 "note": 60,
@@ -754,6 +872,7 @@
                 "drone": [
                     {
                         "bank": 1,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "muted": false,
                         "note": 36,
@@ -764,6 +883,7 @@
                     },
                     {
                         "bank": 1,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "muted": false,
                         "note": 48,
@@ -774,6 +894,7 @@
                     },
                     {
                         "bank": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "muted": true,
                         "note": 60,
@@ -787,6 +908,7 @@
                     {
                         "bank": 0,
                         "capo": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "mode": "midigurdy",
                         "muted": false,
@@ -800,9 +922,10 @@
                     {
                         "bank": 0,
                         "capo": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "mode": "midigurdy",
-                        "muted": false,
+                        "muted": true,
                         "note": 67,
                         "panning": 64,
                         "polyphonic": false,
@@ -813,9 +936,10 @@
                     {
                         "bank": 0,
                         "capo": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "mode": "midigurdy",
-                        "muted": false,
+                        "muted": true,
                         "note": 60,
                         "panning": 64,
                         "polyphonic": false,
@@ -827,7 +951,9 @@
                 "trompette": [
                     {
                         "bank": 2,
+                        "chien_threshold": 50,
                         "finetune": 0,
+                        "mode": "midigurdy",
                         "muted": false,
                         "note": 60,
                         "panning": 75,
@@ -837,7 +963,9 @@
                     },
                     {
                         "bank": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
+                        "mode": "midigurdy",
                         "muted": true,
                         "note": -1,
                         "panning": 64,
@@ -847,7 +975,9 @@
                     },
                     {
                         "bank": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
+                        "mode": "midigurdy",
                         "muted": true,
                         "note": 60,
                         "panning": 64,
@@ -859,27 +989,26 @@
             }
         },
         {
-            "chien": {
-                "threshold": 44
-            },
             "keynoise": {
                 "bank": 3,
+                "chien_threshold": 50,
                 "finetune": 0,
                 "muted": true,
                 "note": 60,
                 "panning": 64,
                 "program": 2,
                 "soundfont": "keynoises.sf2",
-                "volume": 14
+                "volume": 32
             },
             "main": {
                 "gain": 61,
                 "pitchbend_range": 35,
-                "volume": 115
+                "volume": 102
             },
             "name": "Soprano G/C",
             "reverb": {
                 "bank": 0,
+                "chien_threshold": 50,
                 "finetune": 0,
                 "muted": true,
                 "note": 60,
@@ -896,26 +1025,29 @@
                 "drone": [
                     {
                         "bank": 1,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "muted": false,
                         "note": 48,
                         "panning": 64,
                         "program": 3,
                         "soundfont": "vienna-alto.sf2",
-                        "volume": 100
+                        "volume": 107
                     },
                     {
-                        "bank": 0,
+                        "bank": 1,
+                        "chien_threshold": 50,
                         "finetune": 0,
-                        "muted": true,
-                        "note": -1,
+                        "muted": false,
+                        "note": 36,
                         "panning": 64,
                         "program": 0,
-                        "soundfont": null,
-                        "volume": 82
+                        "soundfont": "vienna-alto.sf2",
+                        "volume": 59
                     },
                     {
                         "bank": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "muted": true,
                         "note": 60,
@@ -929,6 +1061,7 @@
                     {
                         "bank": 0,
                         "capo": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "mode": "midigurdy",
                         "muted": false,
@@ -942,6 +1075,7 @@
                     {
                         "bank": 0,
                         "capo": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "mode": "midigurdy",
                         "muted": true,
@@ -955,9 +1089,10 @@
                     {
                         "bank": 0,
                         "capo": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
                         "mode": "midigurdy",
-                        "muted": false,
+                        "muted": true,
                         "note": 60,
                         "panning": 64,
                         "polyphonic": false,
@@ -969,7 +1104,9 @@
                 "trompette": [
                     {
                         "bank": 2,
+                        "chien_threshold": 50,
                         "finetune": 0,
+                        "mode": "midigurdy",
                         "muted": false,
                         "note": 60,
                         "panning": 69,
@@ -979,7 +1116,9 @@
                     },
                     {
                         "bank": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
+                        "mode": "midigurdy",
                         "muted": true,
                         "note": -1,
                         "panning": 64,
@@ -989,7 +1128,9 @@
                     },
                     {
                         "bank": 0,
+                        "chien_threshold": 50,
                         "finetune": 0,
+                        "mode": "midigurdy",
                         "muted": true,
                         "note": 60,
                         "panning": 64,
