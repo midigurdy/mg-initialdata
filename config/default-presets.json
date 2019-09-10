@@ -91,23 +91,23 @@
                     "src": 0
                 },
                 {
-                    "dst": 27,
-                    "src": 290
+                    "dst": 35,
+                    "src": 430
                 },
                 {
-                    "dst": 49,
-                    "src": 822
+                    "dst": 60,
+                    "src": 900
                 },
                 {
-                    "dst": 61,
-                    "src": 1404
+                    "dst": 75,
+                    "src": 1400
                 },
                 {
-                    "dst": 73,
-                    "src": 2104
+                    "dst": 87,
+                    "src": 2000
                 },
                 {
-                    "dst": 95,
+                    "dst": 105,
                     "src": 5000
                 }
             ]
@@ -158,7 +158,7 @@
             "name": "keyvel_to_notevel",
             "ranges": [
                 {
-                    "dst": 4,
+                    "dst": 19,
                     "src": 0
                 },
                 {
@@ -187,16 +187,8 @@
                     "src": 0
                 },
                 {
-                    "dst": 7,
-                    "src": 858
-                },
-                {
-                    "dst": 32,
-                    "src": 1882
-                },
-                {
-                    "dst": 63,
-                    "src": 2866
+                    "dst": 29,
+                    "src": 3000
                 }
             ]
         },
@@ -208,12 +200,12 @@
                     "src": 0
                 },
                 {
-                    "dst": 35,
-                    "src": 333
+                    "dst": 30,
+                    "src": 448
                 },
                 {
-                    "dst": 66,
-                    "src": 998
+                    "dst": 64,
+                    "src": 1157
                 },
                 {
                     "dst": 127,
@@ -250,7 +242,7 @@
                 "panning": 64,
                 "program": 0,
                 "soundfont": null,
-                "volume": 17
+                "volume": 16
             },
             "tuning": {
                 "coarse": 0,
@@ -1144,13 +1136,14 @@
     ],
     "settings": {
         "keyboard": {
-            "base_note_delay": 12,
+            "base_note_delay": 10,
             "key_off_debounce": 6,
-            "key_on_debounce": 3
+            "key_on_debounce": 2
         },
         "ui": {
             "brightness": 50,
             "chien_sens_reverse": false,
+            "multi_chien_threshold": false,
             "timeout": 10
         }
     }
