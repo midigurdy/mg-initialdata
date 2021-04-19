@@ -1135,16 +1135,27 @@
         }
     ],
     "settings": {
+        "features": {
+            "poly_base_note": false,
+            "poly_pitch_bend": false,
+            "string_count": 1
+        },
+        "instrument_mode": "simple_three",
         "keyboard": {
             "base_note_delay": 10,
             "key_off_debounce": 6,
             "key_on_debounce": 2
         },
         "ui": {
-            "brightness": 50,
+            "brightness": 40,
             "chien_sens_reverse": false,
+            "mod1_key_mode": "preset_prev",
+            "mod2_key_mode": "preset_next",
             "multi_chien_threshold": false,
-            "timeout": 10
+            "string_group_by_type": false,
+            "timeout": 10,
+            "wrap_groups": false,
+            "wrap_presets": false
         }
     }
 }
